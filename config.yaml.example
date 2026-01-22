@@ -1,0 +1,27 @@
+groups:
+  - name: Personal Projects
+    projects:
+      - name: VS Code Launcher
+        path: /home/lukas/Projects/Osobní/vscode-launcher
+      - name: My Website
+        path: /home/lukas/Projects/website
+
+  - name: Work Projects
+    projects:
+      - name: Company Backend
+        path: /home/lukas/Work/backend
+      - name: Company Frontend
+        path: /home/lukas/Work/frontend
+
+  - name: Learning
+    projects:
+      - name: Python Tutorial
+        path: /home/lukas/Learning/python
+      - name: Rust Book
+        path: /home/lukas/Learning/rust
+
+# Optional: Specify custom editor command for config editing
+# editor_command: kate
+
+# Optional: Specify custom VS Code command
+# vscode_command: code

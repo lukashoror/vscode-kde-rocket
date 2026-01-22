@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=VS Code Launcher
+Comment=Launch VS Code projects from system tray
+Exec=vscode-launcher
+Icon=code
+Terminal=false
+Categories=Development;Utility;
+StartupNotify=false
