@@ -66,9 +66,6 @@ install(FILES icon.png
 
 # Install example config to home directory (custom target)
 add_custom_target(install-config
-    COMMAND ${CMAKE_COMMAND} -E copy
-        ${CMAKE_SOURCE_DIR}/config.yaml.example
-        $ENV{HOME}/.config/vscode-launcher/config.yaml
-    COMMAND ${CMAKE_COMMAND} -E echo "Config installed to ~/.config/vscode-launcher/config.yaml"
+    COMMAND ${CMAKE_SOURCE_DIR}/install-config.sh ${CMAKE_SOURCE_DIR}/config.yaml.example
     COMMENT "Installing example configuration"
 )

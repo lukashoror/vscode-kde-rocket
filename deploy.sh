@@ -20,7 +20,7 @@ cd build
 echo "Installing to ~/.local..."
 make install
 
-# Install example configuration
+# Install example configuration (only if it doesn't exist)
 echo "Installing configuration..."
 make install-config
 
