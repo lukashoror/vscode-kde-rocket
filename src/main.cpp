@@ -19,6 +19,9 @@ int main(int argc, char *argv[])
     app.setOrganizationName("VSCodeLauncher");
     app.setQuitOnLastWindowClosed(false); // Keep running with system tray
     
+    // Set application icon
+    app.setWindowIcon(QIcon(":/icon.png"));
+    
     // Check if system tray is available
     if (!QSystemTrayIcon::isSystemTrayAvailable()) {
         QMessageBox::critical(nullptr, "VS Code Launcher",

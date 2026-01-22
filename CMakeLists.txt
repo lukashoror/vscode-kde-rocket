@@ -58,6 +58,12 @@ install(FILES vscode-launcher.desktop
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications
 )
 
+# Install icon
+install(FILES icon.png
+    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/256x256/apps
+    RENAME vscode-launcher.png
+)
+
 # Install example config to home directory (custom target)
 add_custom_target(install-config
     COMMAND ${CMAKE_COMMAND} -E copy
